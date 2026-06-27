@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing | Safron Digital Services</title>
+<meta name="description" content="Affordable pricing plans for website development, SEO, branding, AI automation and digital marketing.">
+<meta name="robots" content="index,follow">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#2A2312;
+--bg2:#1C170C;
+--card:#332B15;
+--gold:#FFBE0B;
+--text:#F5EDD6;
+--muted:#B7A982;
+--border:rgba(255,190,11,.15)}
+body{font-family:Nunito,sans-serif;background:var(--bg);color:var(--text)}
+header{position:fixed;top:0;left:0;right:0;background:rgba(28,23,12,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);z-index:99}
+nav{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font:800 30px "Plus Jakarta Sans";color:#fff;text-decoration:none}
+.logo span{color:var(--gold)}
+nav ul{display:flex;list-style:none;gap:28px}
+nav a{text-decoration:none;color:var(--muted);font-weight:600}
+nav a:hover{color:var(--gold)}
+.btn{background:var(--gold);color:#111;padding:12px 24px;border-radius:8px;text-decoration:none;font-weight:700}
+.hero{min-height:65vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px;background:radial-gradient(circle at top,#40351c,var(--bg2));position:relative}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,190,11,.18) 1px,transparent 1px);background-size:30px 30px;mask-image:radial-gradient(circle,black 35%,transparent 90%)}
+.hero>*{position:relative}
+.hero h1{font:800 clamp(3rem,6vw,5rem) "Plus Jakarta Sans";color:var(--gold)}
+.hero p{max-width:720px;margin:20px auto;color:var(--muted)}
+.wrap{max-width:1200px;margin:auto;padding:90px 20px}
+.title{text-align:center;font:800 2.7rem "Plus Jakarta Sans";margin-bottom:20px}
+.subtitle{text-align:center;color:var(--muted);margin-bottom:60px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:35px;transition:.35s;position:relative}
+.card:hover{transform:translateY(-10px)}
+.popular{border:2px solid var(--gold);transform:scale(1.03)}
+.badge{position:absolute;top:20px;right:20px;background:var(--gold);color:#111;padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700}
+.plan{font:700 26px "Plus Jakarta Sans";margin-bottom:10px}
+.price{font:800 3rem "Plus Jakarta Sans";color:var(--gold)}
+.small{color:var(--muted);margin-bottom:25px}
+ul{list-style:none;margin:25px 0}
+li{padding:10px 0;border-bottom:1px solid var(--border)}
+li:before{content:"✓ ";color:var(--gold);font-weight:bold}
+button{width:100%;padding:14px;border:none;border-radius:10px;background:var(--gold);font-weight:700;cursor:pointer}
+.compare{margin-top:90px}
+table{width:100%;border-collapse:collapse}
+th,td{padding:15px;border:1px solid var(--border);text-align:center}
+th{background:var(--card)}
+.faq details{background:var(--card);padding:18px;border-radius:12px;margin:15px 0}
+.cta{margin-top:80px;background:var(--card);padding:60px;border-radius:20px;text-align:center}
+footer{margin-top:80px;background:var(--bg2);border-top:1px solid var(--border)}
+.foot{max-width:1200px;margin:auto;padding:55px 20px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
+.copy{text-align:center;padding:20px;border-top:1px solid var(--border);color:var(--muted)}
+@media(max-width:768px){nav ul{display:none}.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a class="logo" href="index.html">Safron<span>.</span></a>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="pricing.html" style="color:#FFBE0B">Pricing</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+<a class="btn" href="contact.html">Get Quote</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Simple & Transparent Pricing</h1>
+<p>Choose the perfect package for your business. Custom solutions are also available.</p>
+</div>
+</section>
+
+<div class="wrap">
+
+<h2 class="title">Pricing Plans</h2>
+<p class="subtitle">Affordable packages designed for startups, businesses and enterprises.</p>
+
+<div class="grid">
+
+<div class="card">
+<div class="plan">Starter</div>
+<div class="price">Custom Pricing</div>
+<div class="small">One Time</div>
+<ul>
+<li>5 Page Website</li>
+<li>Responsive Design</li>
+<li>Basic SEO</li>
+<li>Contact Form</li>
+<li>30 Days Support</li>
+</ul>
+<button>Choose Plan</button>
+</div>
+
+<div class="card popular">
+<div class="badge">Most Popular</div>
+<div class="plan">Business</div>
+<div class="price">Custom Pricing</div>
+<div class="small">One Time</div>
+<ul>
+<li>15+ Pages</li>
+<li>Premium UI/UX</li>
+<li>Advanced SEO</li>
+<li>Speed Optimization</li>
+<li>WhatsApp Integration</li>
+<li>90 Days Support</li>
+</ul>
+<button>Start Now</button>
+</div>
+
+<div class="card">
+<div class="plan">Enterprise</div>
+<div class="price">Custom Pricing</div>
+<div class="small">Quote Based</div>
+<ul>
+<li>Unlimited Pages</li>
+<li>Custom Dashboard</li>
+<li>AI Automation</li>
+<li>CRM Integration</li>
+<li>Priority Support</li>
+<li>Dedicated Manager</li>
+</ul>
+<button>Contact Us</button>
+</div>
+
+</div>
+
+<div class="compare">
+<h2 class="title">Compare Plans</h2>
+
+<table>
+<tr><th>Feature</th><th>Starter</th><th>Business</th><th>Enterprise</th></tr>
+<tr><td>Responsive Design</td><td>✓</td><td>✓</td><td>✓</td></tr>
+<tr><td>SEO</td><td>Basic</td><td>Advanced</td><td>Premium</td></tr>
+<tr><td>AI Features</td><td>—</td><td>Optional</td><td>Included</td></tr>
+<tr><td>Support</td><td>30 Days</td><td>90 Days</td><td>Lifetime</td></tr>
+<tr><td>Hosting Help</td><td>✓</td><td>✓</td><td>✓</td></tr>
+</table>
+</div>
+
+<div class="faq">
+<h2 class="title">Frequently Asked Questions</h2>
+
+<details>
+<summary>Can I upgrade later?</summary>
+<p>Yes, you can upgrade your package anytime.</p>
+</details>
+
+<details>
+<summary>Do you provide hosting?</summary>
+<p>Yes. We help with domain, hosting and deployment.</p>
+</details>
+
+<details>
+<summary>Can I request a custom quote?</summary>
+<p>Absolutely. Every business is unique.</p>
+</details>
+
+</div>
+
+<div class="cta">
+<h2 style="font:800 42px 'Plus Jakarta Sans';margin-bottom:15px">Need a Custom Package?</h2>
+<p style="color:var(--muted);margin-bottom:25px">Tell us your requirements and we'll prepare a custom proposal within 24 hours.</p>
+<a class="btn" href="contact.html">Request Free Quote</a>
+</div>
+
+</div>
+
+<footer>
+<div class="foot">
+<div>
+<h3 style="color:#FFBE0B">Safron Digital</h3>
+<p>Helping businesses grow with premium websites, SEO, branding and AI automation.</p>
+</div>
+
+<div>
+<h3 style="color:#FFBE0B">Quick Links</h3>
+<p>Home<br>Services<br>Projects<br>Pricing<br>Contact</p>
+</div>
+
+<div>
+<h3 style="color:#FFBE0B">Services</h3>
+<p>Web Development<br>SEO<br>Branding<br>AI Solutions</p>
+</div>
+</div>
+
+<div class="copy">© 2026 Safron Digital Services. All Rights Reserved.</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects | Safron Digital Services</title>
+<meta name="description" content="Explore the portfolio and projects of Safron Digital Services including websites, ecommerce, branding, SEO and AI solutions.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#2A2312;--bg2:#1C170C;--card:#332B15;--gold:#FFBE0B;--text:#F5EDD6;--muted:#B3A47C;--border:rgba(255,190,11,.15)}
+body{font-family:Nunito,sans-serif;background:var(--bg);color:var(--text)}
+header{position:fixed;top:0;left:0;right:0;background:rgba(28,23,12,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:99}
+nav{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font:800 30px "Plus Jakarta Sans";color:#fff;text-decoration:none}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:28px;list-style:none}nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--gold)}
+.btn{background:var(--gold);color:#111;padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:700}
+.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px;background:radial-gradient(circle at top,#40351c,var(--bg2));position:relative}
+.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,190,11,.18) 1px,transparent 1px);background-size:30px 30px;mask-image:radial-gradient(circle,black 35%,transparent 90%)}
+.hero>*{position:relative}
+h1{font:800 clamp(3rem,6vw,5rem) "Plus Jakarta Sans";color:var(--gold)}
+.hero p{max-width:720px;margin:20px auto;color:var(--muted)}
+.wrap{max-width:1200px;margin:auto;padding:90px 20px}
+.filters{text-align:center;margin-bottom:35px}
+.filters button{margin:6px;padding:10px 18px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:999px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;overflow:hidden;transition:.3s;opacity:0;transform:translateY(35px)}
+.card.show{opacity:1;transform:none}
+.card:hover{transform:translateY(-8px)}
+.thumb{height:210px;background:linear-gradient(135deg,#5b4310,#ffbe0b);display:flex;align-items:center;justify-content:center;font:700 28px "Plus Jakarta Sans";color:#1c170c}
+.content{padding:24px}
+.badge{display:inline-block;background:rgba(255,190,11,.12);color:var(--gold);padding:5px 10px;border-radius:999px;font-size:12px;margin-bottom:12px}
+.content h3{font:700 24px "Plus Jakarta Sans";margin-bottom:10px}
+.content p{color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+.tags span{border:1px solid var(--border);padding:5px 10px;border-radius:999px;font-size:12px}
+.actions{display:flex;gap:10px}
+.actions a{flex:1;text-align:center;padding:12px;border-radius:8px;text-decoration:none;font-weight:700}
+.primary{background:var(--gold);color:#111}.secondary{border:1px solid var(--border);color:var(--text)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin:80px 0}
+.stat{background:var(--card);padding:28px;border-radius:16px;text-align:center}
+.stat b{display:block;font:800 38px "Plus Jakarta Sans";color:var(--gold)}
+.cta{background:var(--card);padding:60px;border-radius:20px;text-align:center}
+footer{margin-top:80px;background:var(--bg2);border-top:1px solid var(--border)}
+.foot{max-width:1200px;margin:auto;padding:50px 20px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+.copy{text-align:center;padding:18px;border-top:1px solid var(--border);color:var(--muted)}
+@media(max-width:768px){nav ul{display:none}.foot{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="index.html">Safron<span>.</span></a><ul><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html" style="color:#FFBE0B">Projects</a></li><li><a href="contact.html">Contact</a></li></ul><a class="btn" href="contact.html">Start Project</a></nav></header>
+
+<section class="hero">
+<div><h1>Our Projects</h1><p>Browse some of our recent work in website development, ecommerce, branding, SEO and AI automation.</p><a class="btn" href="#portfolio">View Portfolio</a></div>
+</section>
+
+<div class="wrap" id="portfolio">
+<div class="filters">
+<button>All</button><button>Websites</button><button>Ecommerce</button><button>Branding</button><button>SEO</button>
+</div>
+
+<div class="grid">
+<div class="card"><div class="thumb">Business Website</div><div class="content"><span class="badge">Corporate Website</span><h3>Business Website</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JS</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+<div class="card"><div class="thumb">Restaurant Website</div><div class="content"><span class="badge">UI/UX Design</span><h3>Restaurant Website</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>Responsive</span><span>Booking</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+<div class="card"><div class="thumb">Ecommerce Store</div><div class="content"><span class="badge">Shopify</span><h3>Ecommerce Store</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>Payments</span><span>Orders</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+<div class="card"><div class="thumb">Hospital Portal</div><div class="content"><span class="badge">Healthcare</span><h3>Hospital Portal</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>Dashboard</span><span>Appointment</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+<div class="card"><div class="thumb">Real Estate</div><div class="content"><span class="badge">Property</span><h3>Real Estate</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>Lead Generation</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+<div class="card"><div class="thumb">AI Automation</div><div class="content"><span class="badge">Automation</span><h3>AI Automation</h3><p>Modern premium project designed for performance, SEO and conversions.</p><div class="tags"><span>Chatbot</span><span>CRM</span></div><div class="actions"><a class="primary" href="#">Live Demo</a><a class="secondary" href="#">Case Study</a></div></div></div>
+</div>
+
+<div class="stats">
+<div class="stat"><b>200+</b>Projects</div>
+<div class="stat"><b>98%</b>Success</div>
+<div class="stat"><b>50+</b>Clients</div>
+<div class="stat"><b>4.9★</b>Rating</div>
+</div>
+
+<div class="cta">
+<h2 style="font:800 42px 'Plus Jakarta Sans';margin-bottom:15px">Have a Project in Mind?</h2>
+<p style="color:var(--muted);margin-bottom:25px">Let's build your next digital success story.</p>
+<a class="btn" href="contact.html">Request a Free Quote</a>
+</div>
+</div>
+
+<footer><div class="foot">
+<div><h3 style="color:#FFBE0B">Safron Digital</h3><p>Premium digital experiences that help businesses grow.</p></div>
+<div><h3 style="color:#FFBE0B">Company</h3><p>Home<br>Services<br>Projects<br>Contact</p></div>
+<div><h3 style="color:#FFBE0B">Services</h3><p>Web Development<br>SEO<br>Branding<br>AI Automation</p></div>
+</div><div class="copy">© 2026 Safron Digital Services</div></footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.15});
+document.querySelectorAll('.card').forEach(c=>io.observe(c));
+</script>
+</body></html>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Safron Services</title>
+<meta name="description" content="Premium digital services by Safron.">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--dark:#2A2312;--dark2:#1C170C;--dark3:#332B15;--gold:#FFBE0B;
+--text:#F5EDD6;--muted:#B9AB84;--border:rgba(255,190,11,.18)}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,sans-serif;background:var(--dark);color:var(--text);overflow-x:hidden}
+.hero-bg{position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,190,11,.18) 1px,transparent 1px);background-size:30px 30px;mask-image:radial-gradient(circle at center,black 30%,transparent 90%)}
+header{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(28,23,12,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+nav{max-width:1200px;margin:auto;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.logo{font:800 30px "Plus Jakarta Sans";text-decoration:none;color:#fff}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:28px;list-style:none}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;transition:.3s}
+nav a:hover{color:var(--gold)}
+.btn{background:var(--gold);padding:13px 24px;border-radius:8px;color:#111;text-decoration:none;font-weight:700;box-shadow:0 5px 20px rgba(255,190,11,.3);transition:.3s}
+.btn:hover{transform:translateY(-3px)}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:120px 20px}
+.hero-content{position:relative;z-index:2;max-width:900px;animation:fadeUp 1s}
+.tag{display:inline-block;padding:8px 18px;border:1px solid var(--border);background:rgba(255,190,11,.08);border-radius:999px;color:var(--gold);margin-bottom:20px}
+h1{font:800 clamp(3rem,6vw,5rem) "Plus Jakarta Sans";line-height:1.1;margin-bottom:20px}
+.gold{color:var(--gold)}
+.hero p{max-width:700px;margin:0 auto 35px;color:var(--muted);font-size:1.1rem}
+.stats{display:flex;justify-content:center;gap:50px;margin-top:60px;flex-wrap:wrap}
+.stat b{display:block;font:800 2rem "Plus Jakarta Sans";color:var(--gold)}
+.marquee{overflow:hidden;border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--dark2)}
+.track{display:flex;width:max-content;animation:marquee 20s linear infinite}
+.item{padding:16px 35px;white-space:nowrap;color:var(--muted)}
+section{padding:90px 20px;max-width:1200px;margin:auto}
+.title{text-align:center;font:800 2.5rem "Plus Jakarta Sans";margin-bottom:50px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.card{background:var(--dark3);border:1px solid var(--border);border-radius:18px;padding:28px;transition:.35s;opacity:0;transform:translateY(35px)}
+.card.visible{opacity:1;transform:none}
+.card:hover{transform:translateY(-8px);border-color:#ffbe0b}
+.card h3{font:700 1.2rem "Plus Jakarta Sans";color:var(--gold);margin:15px 0}
+.icon{font-size:2rem}
+.cta{background:linear-gradient(135deg,var(--dark3),var(--dark2));border:1px solid var(--border);padding:60px;border-radius:20px;text-align:center}
+footer{margin-top:70px;background:var(--dark2);border-top:1px solid var(--border)}
+.footer{max-width:1200px;margin:auto;padding:60px 20px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.copy{text-align:center;padding:20px;border-top:1px solid var(--border);color:var(--muted)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media(max-width:768px){nav ul{display:none}.footer{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="index.html">Safron<span>.</span></a><ul><li><a href="index.html">Home</a></li><li><a href="#">Services</a></li><li><a href="#">Portfolio</a></li><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul><a class="btn" href="#">Get Quote</a></nav></header>
+
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-content">
+<div class="tag">Premium Digital Agency</div>
+<h1>Digital Services That <span class="gold">Grow Businesses</span></h1>
+<p>Website Development, SEO, Branding, AI Automation, Ecommerce and Digital Marketing with the same premium look and feel as your homepage.</p>
+<a class="btn" href="#">Start Project</a>
+<div class="stats">
+<div class="stat"><b>200+</b>Projects</div>
+<div class="stat"><b>4.9★</b>Rating</div>
+<div class="stat"><b>98%</b>Success</div>
+</div>
+</div>
+</section>
+
+<div class="marquee"><div class="track">
+<div class="item">Website Development ✦ SEO ✦ Branding ✦ Ecommerce ✦ AI Automation ✦ Google Ads ✦ Website Development ✦ SEO ✦ Branding ✦ Ecommerce ✦ AI Automation ✦ Google Ads</div>
+</div></div>
+
+<section>
+<h2 class="title">Our Premium Services</h2>
+<div class="grid">
+<div class="card"><div class="icon">💻</div><h3>Website Development</h3><p>Fast business websites.</p></div>
+<div class="card"><div class="icon">🛒</div><h3>Ecommerce</h3><p>Online stores with secure payments.</p></div>
+<div class="card"><div class="icon">🔍</div><h3>SEO</h3><p>Technical & Local SEO.</p></div>
+<div class="card"><div class="icon">📱</div><h3>Social Media</h3><p>Marketing & ads.</p></div>
+<div class="card"><div class="icon">🤖</div><h3>AI Automation</h3><p>Business workflows.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Branding</h3><p>Professional identity.</p></div>
+</div>
+</section>
+
+<section><div class="cta">
+<h2 class="title">Ready to Build Something Amazing?</h2>
+<p style="color:var(--muted);margin-bottom:25px">Let's create a website that looks premium and converts visitors into customers.</p>
+<a class="btn" href="#">Contact Us</a>
+</div></section>
+
+<footer><div class="footer">
+<div><h3 style="color:#FFBE0B">Safron Digital</h3><p>Premium websites, SEO and AI-powered digital growth.</p></div>
+<div><h3 style="color:#FFBE0B">Company</h3><p>Home<br>Services<br>About</p></div>
+<div><h3 style="color:#FFBE0B">Services</h3><p>Web Development<br>SEO<br>Branding</p></div>
+</div><div class="copy">©2026 Safron Digital Services</div></footer>
+
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.15});
+document.querySelectorAll('.card').forEach(c=>obs.observe(c));
+</script>
+</body></html>
